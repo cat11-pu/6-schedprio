@@ -1,0 +1,12 @@
+{
+  "quantum": 2,
+  "quanta": 12,
+  "locks": {"db": ["low"]},
+  "tasks": [
+    {"id": "low", "priority": 1, "work": 12, "holds": ["db"]},
+    {"id": "mid", "priority": 5, "work": 2},
+    {"id": "high", "priority": 9, "work": 2, "needs": ["db"]},
+    {"id": "filler", "priority": 4, "work": 3},
+    {"id": "filler2", "priority": 4, "work": 3}
+  ]
+}
