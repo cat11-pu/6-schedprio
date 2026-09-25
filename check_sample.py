@@ -21,6 +21,8 @@ def main() -> int:
     print("上下文切换次数 =", plan["switches"])
     print("量级（调度事件数） =", len(spec["tasks"]) * spec["quanta"])
     print("不变量（高优先级不越级等待） =", plan["invariant_ok"])
+    print("提权序列 =", plan["boosts"])
+    print("任务数 =", len(spec["tasks"]))
     return 0
 
 
